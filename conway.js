@@ -3,8 +3,8 @@
 // Any live cell with more than three live neighbours dies, as if by over-population.
 // Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
-var BOARDWIDTH = 90;
-var BOARDHEIGHT = 30;
+var BOARDWIDTH = 113;
+var BOARDHEIGHT = 26;
 var ALIVE = 1;
 var DEAD = 0;
 var NORMALTIME = 300; //in milliseconds

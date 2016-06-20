@@ -11,7 +11,49 @@ p{font-size:14px;line-height:1.75}
 
 p.large{font-size:16px}
 
-a,a:hover,a:focus,a:active,a.active{outline:0}a{color:#fed136}a:hover,a:focus,a:active,a.active{color:#fec503}h1,h2,h3,h4,h5,h6{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700}.img-centered{margin:0 auto}.bg-light-gray{background-color:#f7f7f7}.bg-darkest-gray{background-color:#222}.btn-primary{color:#fff;background-color:#fed136;border-color:#fed136;font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700}.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary{color:#fff;background-color:#fec503;border-color:#f6bf01}.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary{background-image:none}.btn-primary.disabled,.btn-primary[disabled],fieldset[disabled] .btn-primary,.btn-primary.disabled:hover,.btn-primary[disabled]:hover,fieldset[disabled] .btn-primary:hover,.btn-primary.disabled:focus,.btn-primary[disabled]:focus,fieldset[disabled] .btn-primary:focus,.btn-primary.disabled:active,.btn-primary[disabled]:active,fieldset[disabled] .btn-primary:active,.btn-primary.disabled.active,.btn-primary[disabled].active,fieldset[disabled] .btn-primary.active{background-color:#fed136;border-color:#fed136}.btn-primary .badge{color:#fed136;background-color:#fff}.btn-xl{color:#fff;background-color:#fed136;border-color:#fed136;font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700;border-radius:3px;font-size:18px;padding:20px 40px}.btn-xl:hover,.btn-xl:focus,.btn-xl:active,.btn-xl.active,.open .dropdown-toggle.btn-xl{color:#fff;background-color:#fec503;border-color:#f6bf01}.btn-xl:active,.btn-xl.active,.open .dropdown-toggle.btn-xl{background-image:none}.btn-xl.disabled,.btn-xl[disabled],fieldset[disabled] .btn-xl,.btn-xl.disabled:hover,.btn-xl[disabled]:hover,fieldset[disabled] .btn-xl:hover,.btn-xl.disabled:focus,.btn-xl[disabled]:focus,fieldset[disabled] .btn-xl:focus,.btn-xl.disabled:active,.btn-xl[disabled]:active,fieldset[disabled] .btn-xl:active,.btn-xl.disabled.active,.btn-xl[disabled].active,fieldset[disabled] .btn-xl.active{background-color:#fed136;border-color:#fed136}.btn-xl .badge{color:#fed136;background-color:#fff}.navbar-default{background-color:#222;border-color:transparent}
+a,a:hover,a:focus,a:active,a.active{outline:0}
+
+a{color:#fed136}
+
+a:hover,a:focus,a:active,a.active{color:#fec503}
+
+h1,h2,h3,h4,h5,h6{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700}
+
+.img-centered{margin:0 auto}
+
+.bg-light-gray{background-color:#f7f7f7}
+
+.bg-darkest-gray{background-color:#222}
+
+.btn-primary{
+  color:#fff;background-color:#fed136;border-color:#fed136;
+  font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700
+}
+
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary{
+  color:#fff;background-color:#fec503;border-color:#f6bf01
+}
+
+.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary{background-image:none}
+
+.btn-primary.disabled,.btn-primary[disabled],fieldset[disabled] .btn-primary,.btn-primary.disabled:hover,.btn-primary[disabled]:hover,fieldset[disabled] .btn-primary:hover,.btn-primary.disabled:focus,.btn-primary[disabled]:focus,fieldset[disabled] .btn-primary:focus,.btn-primary.disabled:active,.btn-primary[disabled]:active,fieldset[disabled] .btn-primary:active,.btn-primary.disabled.active,.btn-primary[disabled].active,fieldset[disabled] .btn-primary.active{background-color:#fed136;border-color:#fed136}
+
+.btn-primary .badge{color:#fed136;background-color:#fff}
+
+.btn-xl{color:#fff;background-color:#fed136;border-color:#fed136;font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700;border-radius:3px;font-size:18px;padding:20px 40px}
+
+.btn-xl:hover,.btn-xl:focus,.btn-xl:active,.btn-xl.active,.open .dropdown-toggle.btn-xl{color:#fff;background-color:#fec503;border-color:#f6bf01}
+
+.btn-xl:active,.btn-xl.active,.open .dropdown-toggle.btn-xl{background-image:none}
+
+.btn-xl.disabled,.btn-xl[disabled],fieldset[disabled] .btn-xl,.btn-xl.disabled:hover,.btn-xl[disabled]:hover,fieldset[disabled] .btn-xl:hover,.btn-xl.disabled:focus,.btn-xl[disabled]:focus,fieldset[disabled] .btn-xl:focus,.btn-xl.disabled:active,.btn-xl[disabled]:active,fieldset[disabled] .btn-xl:active,.btn-xl.disabled.active,.btn-xl[disabled].active,fieldset[disabled] .btn-xl.active{
+  background-color:#fed136;
+  border-color:#fed136
+}
+
+.btn-xl .badge{color:#fed136;background-color:#fff}
+
+.navbar-default{background-color:#222;border-color:transparent}
 
 .navbar-default .navbar-brand{
   color:#fed136;
@@ -22,7 +64,31 @@ a,a:hover,a:focus,a:active,a.active{outline:0}a{color:#fed136}a:hover,a:focus,a:
   color:#fec503
 }
 
-.navbar-default .navbar-collapse{border-color:rgba(255,255,255,.02)}.navbar-default .navbar-toggle{background-color:#fed136;border-color:#fed136}.navbar-default .navbar-toggle .icon-bar{background-color:#fff}.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{background-color:#fed136}.navbar-default .nav li a{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:400;letter-spacing:1px;color:#fff}.navbar-default .nav li a:hover,.navbar-default .nav li a:focus{color:#fed136;outline:0}.navbar-default .navbar-nav>.active>a{border-radius:0;color:#fff;background-color:#fed136}.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{color:#fff;background-color:#fec503}
+.navbar-default .navbar-collapse{border-color:rgba(255,255,255,.02)}
+
+.navbar-default .navbar-toggle{background-color:#fed136;border-color:#fed136}
+
+.navbar-default .navbar-toggle .icon-bar{background-color:#fff}
+
+.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{background-color:#fed136}
+
+.navbar-default .nav li a{
+  font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform:uppercase;
+  font-weight:400;
+  letter-spacing:1px;
+  color:#fff
+}
+
+.navbar-default .nav li a:hover,.navbar-default .nav li a:focus{color:#fed136;outline:0}
+
+.navbar-default .navbar-nav>.active>a{border-radius:0;color:#fff;background-color:#fed136}
+
+.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{
+  color:#fff;
+  background-color:#fec503
+}
+
 @media (min-width:768px){
   .navbar-default{
     background-color:transparent;
@@ -62,40 +128,54 @@ header{
 }
 
 #gameTable{
-  margin-top: 52px;
+  margin-top: 50px;
   position: absolute;
 }
 
 header .intro-text{
-  padding-top:300px;
-  padding-bottom:50px
+  padding-top:250px;
+  padding-bottom:70px;
 }
 
 header .intro-text .intro-lead-in{
   font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-style:italic;font-size:22px;line-height:22px;margin-bottom:25px
+  font-style:italic;
+  font-size:22px;
+  line-height:22px;
+  margin-bottom:25px
 }
 
 header .intro-text .intro-heading{
-  font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700;font-size:50px;line-height:50px;margin-bottom:25px
+  font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform:uppercase;
+  font-weight:700;
+  font-size:50px;
+  line-height:50px;
+  margin-bottom:25px
+}
+
+@media (min-width:611px){
+  header .intro-text{
+    padding-bottom: 120px;
+  }
 }
 
 @media (min-width:768px){
-
   #gameTable{
-    margin-top: 102px;
+    margin-top: 100px;
     position: absolute;
   }
 
   header .intro-text{
     padding-top:300px;
-    padding-bottom:200px
+    padding-bottom:3px;
   }
 
   header .intro-text .intro-lead-in{
     font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-style:italic;font-size:40px;
-    line-height:40px;margin-bottom:25px
+    line-height:40px;
+    margin-bottom:25px
   }
   header .intro-text .intro-heading{
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -103,16 +183,23 @@ header .intro-text .intro-heading{
     font-weight:700;
     font-size:75px;
     line-height:75px;
-    margin-bottom:50px
+  }
+}
+
+@media (min-width:908px){
+  header .intro-text{
+    padding-bottom: 78px;
   }
 }
 
 section{
-  padding:100px 0
+  padding:50px 0
 }
 
 section h2.section-heading{
-  font-size:40px;margin-top:0;margin-bottom:15px
+  font-size:40px;
+  margin-top:0;
+  margin-bottom:15px
 }
 
 section h3.section-subheading{
@@ -124,7 +211,7 @@ section h3.section-subheading{
 
 @media (min-width:768px){
   section{
-    padding:150px 0
+    padding:50px 0
   }
 }
 
