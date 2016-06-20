@@ -4,13 +4,6 @@ td {
   border-width: 1px;
 }
 
-#gameTable{
-  margin-top: 100px;
-  /*width: 98%;
-  height: 100%;*/
-  position: absolute;
-}
-
 td:hover{
   background-color: lightgray;
 }
