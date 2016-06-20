@@ -5,15 +5,15 @@ td {
 }
 
 td:hover{
-  background-color: lightgray;
+  background-color: #fed136;
 }
 
 .cellAlive{
-  background-color: black;
+  background-color: #fed136;
 }
 
 .cellAlive:hover{
-  background-color: black;
+  background-color: #fed136;
 }
 
 .table-responsive {
