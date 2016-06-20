@@ -16,6 +16,14 @@ td:hover{
   background-color: #fed136;
 }
 
+#gameControls{
+  margin-left: 50px;
+}
+
+.table{
+  margin-bottom: 0px;
+}
+
 .table-responsive {
   min-height: .01%;
   overflow-x: hidden;

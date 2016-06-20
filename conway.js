@@ -142,82 +142,97 @@ function makeJollyRoger(board, location){
   return newBoard;
 }
 
+function makeClick(board, location){
+  newBoard=board;
+  newLocation=location;
+  //C
+  newBoard[newLocation+1] = ALIVE;
+  newBoard[newLocation+2] = ALIVE;
+  newBoard[newLocation+3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4+2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4+3] = ALIVE;
+  //l
+  newLocation+=5;
+  newBoard[newLocation] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4] = ALIVE;
+  //i
+  newLocation+=2;
+  newBoard[newLocation] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4] = ALIVE;
+  //c
+  newLocation+=2;
+  newBoard[newLocation+BOARDWIDTH*2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*2+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4+1] = ALIVE;
+  //k
+  newLocation+=3;
+  newBoard[newLocation] = ALIVE;
+  newBoard[newLocation+3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH+2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*2+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3+2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4+3] = ALIVE;
+  updateHTML(newBoard);
+  return newBoard;
+}
+
 function makeHiImMike(board, location){
   newBoard = board;
   newLocation = location;
-  // //H
-  // newBoard[newLocation] = ALIVE;
-  // newBoard[newLocation+1] = ALIVE;
-  // newBoard[newLocation+4] = ALIVE;
-  // newBoard[newLocation+5] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH+1] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH+4] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH+5] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*2] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*2+1] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*2+4] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*2+5] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*3] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*3+1] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*3+2] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*3+3] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*3+4] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*3+5] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*4] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*4+1] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*4+2] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*4+3] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*4+4] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*4+5] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*5] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*5+1] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*5+4] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*5+5] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*6] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*6+1] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*6+4] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*6+5] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*7] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*7+1] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*7+4] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*7+5] = ALIVE;
-  // //I
-  // newLocation += 7;
-  // newBoard[newLocation] = ALIVE;
-  // newBoard[newLocation+1] = ALIVE;
-  // newBoard[newLocation+2] = ALIVE;
-  // newBoard[newLocation+3] = ALIVE;
-  // newBoard[newLocation+4] = ALIVE;
-  // newBoard[newLocation+5] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH+1] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH+2] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH+3] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH+4] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH+5] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*2+2] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*2+3] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*3+2] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*3+3] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*4+2] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*4+3] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*5+2] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*5+3] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*6] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*6+1] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*6+2] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*6+3] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*6+4] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*6+5] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*7] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*7+1] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*7+2] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*7+3] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*7+4] = ALIVE;
-  // newBoard[newLocation+BOARDWIDTH*7+5] = ALIVE;
-  // //I
-  // newLocation += 9;
+  //H
+  newBoard[newLocation] = ALIVE;
+  newBoard[newLocation+1] = ALIVE;
+  newBoard[newLocation+4] = ALIVE;
+  newBoard[newLocation+5] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH+4] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH+5] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*2+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*2+4] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*2+5] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3+2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3+3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3+4] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3+5] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4+2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4+3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4+4] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4+5] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*5] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*5+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*5+4] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*5+5] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*6] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*6+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*6+4] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*6+5] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*7] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*7+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*7+4] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*7+5] = ALIVE;
+  //I
+  newLocation += 7;
   newBoard[newLocation] = ALIVE;
   newBoard[newLocation+1] = ALIVE;
   newBoard[newLocation+2] = ALIVE;
@@ -250,108 +265,145 @@ function makeHiImMike(board, location){
   newBoard[newLocation+BOARDWIDTH*7+3] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*7+4] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*7+5] = ALIVE;
-  //M
-  newLocation += 7
+  //I
+  newLocation += 9;
   newBoard[newLocation] = ALIVE;
   newBoard[newLocation+1] = ALIVE;
-  newBoard[newLocation+8] = ALIVE;
-  newBoard[newLocation+9] = ALIVE;
+  newBoard[newLocation+2] = ALIVE;
+  newBoard[newLocation+3] = ALIVE;
+  newBoard[newLocation+4] = ALIVE;
+  newBoard[newLocation+5] = ALIVE;
   newBoard[newLocation+BOARDWIDTH] = ALIVE;
   newBoard[newLocation+BOARDWIDTH+1] = ALIVE;
   newBoard[newLocation+BOARDWIDTH+2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH+3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH+4] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH+5] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*2+2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*2+3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3+2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3+3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4+2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4+3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*5+2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*5+3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*6] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*6+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*6+2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*6+3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*6+4] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*6+5] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*7] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*7+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*7+2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*7+3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*7+4] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*7+5] = ALIVE;
+  //'
+  newLocation += 7
+  newBoard[newLocation] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*2] = ALIVE;
+  //M
+  newLocation += 2
+  newBoard[newLocation] = ALIVE;
+  newBoard[newLocation+1] = ALIVE;
+  newBoard[newLocation+7] = ALIVE;
+  newBoard[newLocation+8] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH+2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH+6] = ALIVE;
   newBoard[newLocation+BOARDWIDTH+7] = ALIVE;
   newBoard[newLocation+BOARDWIDTH+8] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH+9] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*2] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*2+1] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*2+2] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*2+3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*2+5] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*2+6] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*2+7] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*2+8] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*2+9] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*3] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*3+1] = ALIVE;  newBoard[newLocation+BOARDWIDTH*3+2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3+2] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*3+3] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*3+4] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*3+5] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*3+6] = ALIVE;  newBoard[newLocation+BOARDWIDTH*3+7] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3+6] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3+7] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*3+8] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*3+9] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*4] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*4+1] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*4+3] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*4+4] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*4+5] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*4+6] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4+7] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*4+8] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*4+9] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*5] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*5+1] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*5+4] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*5+5] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*5+7] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*5+8] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*5+9] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*6] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*6+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*6+7] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*6+8] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*6+9] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*7] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*7+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*7+7] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*7+8] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*7+9] = ALIVE;
   //M
   newLocation += 13
   newBoard[newLocation] = ALIVE;
   newBoard[newLocation+1] = ALIVE;
+  newBoard[newLocation+7] = ALIVE;
   newBoard[newLocation+8] = ALIVE;
-  newBoard[newLocation+9] = ALIVE;
   newBoard[newLocation+BOARDWIDTH] = ALIVE;
   newBoard[newLocation+BOARDWIDTH+1] = ALIVE;
   newBoard[newLocation+BOARDWIDTH+2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH+6] = ALIVE;
   newBoard[newLocation+BOARDWIDTH+7] = ALIVE;
   newBoard[newLocation+BOARDWIDTH+8] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH+9] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*2] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*2+1] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*2+2] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*2+3] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*2+5] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*2+6] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*2+7] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*2+8] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*2+9] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*3] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*3+1] = ALIVE;  newBoard[newLocation+BOARDWIDTH*3+2] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3+2] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*3+3] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*3+4] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*3+5] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*3+6] = ALIVE;  newBoard[newLocation+BOARDWIDTH*3+7] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3+6] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*3+7] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*3+8] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*3+9] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*4] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*4+1] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*4+3] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*4+4] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*4+5] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*4+6] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*4+7] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*4+8] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*4+9] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*5] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*5+1] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*5+4] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*5+5] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*5+7] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*5+8] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*5+9] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*6] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*6+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*6+7] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*6+8] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*6+9] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*7] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*7+1] = ALIVE;
+  newBoard[newLocation+BOARDWIDTH*7+7] = ALIVE;
   newBoard[newLocation+BOARDWIDTH*7+8] = ALIVE;
-  newBoard[newLocation+BOARDWIDTH*7+9] = ALIVE;
   //I
-  newLocation += 11;
+  newLocation += 10;
   newBoard[newLocation] = ALIVE;
   newBoard[newLocation+1] = ALIVE;
   newBoard[newLocation+2] = ALIVE;
@@ -654,8 +706,8 @@ $(document).ready(function(){
     cellCreator = "downRightGlider"
   })
 
-  jsGameBoard = makeHiImMike(jsGameBoard, BOARDWIDTH*2+2)
-
+  jsGameBoard = makeHiImMike(jsGameBoard, BOARDWIDTH*2+2);
+  jsGameBoard = makeClick(jsGameBoard, BOARDWIDTH*20+2);
   // jsGameBoard = randomizeBoard(jsGameBoard);
   //startGame(NORMALTIME);
 

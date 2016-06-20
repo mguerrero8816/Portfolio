@@ -89,11 +89,17 @@
     <header>
         <div class="bg-light-gray">
 
-          <div id="gameTable" class="table-responsive">
+          <div id="gameTable" class="table-responsive text-left">
             <table class="table">
               <tbody id="gameBoard">
               </tbody>
             </table>
+            <div id="gameControls" class="btn-group">
+              <button type="button" id="normalButton" class="btn btn-default">Start</button>
+              <button type="button" id="stopButton" class="btn btn-default">Stop</button>
+              <button type="button" id="randomizeButton" class="btn btn-default">Randomize</button>
+              <button type="button" id="clearButton" class="btn btn-default">Clear</button>
+            </div>
           </div>
 
           <div id="introText" class="intro-text">
@@ -110,51 +116,64 @@
             <div class="row">
                 <div class="col-sm-12 text-center">
                     <h2 class="section-heading">Languages</h2>
+                    <p class="text-muted"></br></p>
+                    <p class="text-muted"></br></p>
                 </div>
             </div>
 
             <div class="row text-center">
-                <div class="col-sm-3">
+                <div class="col-md-3 col-sm-6">
                   <i class="devicon-ruby-plain colored language-img"></i>
                   <h4 class="language-heading">Ruby</h4>
                   <p class="text-muted">Ruby on Rails</p>
                   <p class="text-muted">Rspec</p>
                   <p class="text-muted">Rubocop</p>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-3 col-sm-6">
                   <i class="devicon-postgresql-plain colored language-img"></i>
                   <h4 class="language-heading">SQL</h4>
                   <p class="text-muted">PostgreSQL</p>
                   <p class="text-muted">Microsoft SQL</p>
+                  <p class="text-muted"></br></p>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-3 col-sm-6">
                   <i class="devicon-javascript-plain colored language-img"></i>
                   <h4 class="language-heading">Javascript</h4>
                   <p class="text-muted">jQuery</p>
+                  <p class="text-muted"></br></p>
+                  <p class="text-muted"></br></p>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-3 col-sm-6">
                   <i class="devicon-css3-plain colored language-img"></i>
                   <h4 class="language-heading">CSS</h4>
                   <p class="text-muted">Bootstrap</p>
+                  <p class="text-muted"></br></p>
+                  <p class="text-muted"></br></p>
                 </div>
-            </div>
 
-            <div class="row text-center">
-                <div class="col-sm-3">
+                <div class="col-md-3 col-sm-6">
                   <i class="devicon-html5-plain colored language-img"></i>
                   <h4 class="language-heading">HTML</h4>
+                  <p class="text-muted"></br></p>
+                  <p class="text-muted"></br></p>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-3 col-sm-6">
                   <i class="devicon-python-plain colored language-img"></i>
                   <h4 class="language-heading">Python</h4>
+                  <p class="text-muted"></br></p>
+                  <p class="text-muted"></br></p>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-3 col-sm-6">
                   <i class="devicon-c-plain colored language-img"></i>
                   <h4 class="language-heading">C</h4>
+                  <p class="text-muted"></br></p>
+                  <p class="text-muted"></br></p>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-3 col-sm-6">
                   <i class="devicon-java-plain colored language-img"></i>
                   <h4 class="language-heading">Java</h4>
+                  <p class="text-muted"></br></p>
+                  <p class="text-muted"></br></p>
                 </div>
             </div>
 
@@ -181,8 +200,8 @@
                         <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
-                        <p class="text-muted">Graphic Design</p>
+                        <h4>Student Matcher</h4>
+                        <p class="text-muted">Ruby on Rails</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -195,8 +214,8 @@
                         <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Startup Framework</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4>Conway's Game of Life</h4>
+                        <p class="text-muted">Javascript</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -209,8 +228,8 @@
                         <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Treehouse</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4>Battleship</h4>
+                        <p class="text-muted">Javascript</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -223,8 +242,8 @@
                         <img src="img/portfolio/golden.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Golden</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4>Galaga</h4>
+                        <p class="text-muted">Javascript</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -237,8 +256,8 @@
                         <img src="img/portfolio/escape.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4>WIP</h4>
+                        <p class="text-muted">TBD</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -251,8 +270,8 @@
                         <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Dreams</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4>WIP</h4>
+                        <p class="text-muted">TBD</p>
                     </div>
                 </div>
             </div>
@@ -373,53 +392,11 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
+                        <img src="img/Mike.jpg" class="img-responsive" alt="">
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                <div class="col-sm-8">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
                 </div>
             </div>
         </div>
@@ -474,23 +451,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2014</span>
+                    <span class="copyright">&copy; Portfolio - Mike Guerrero 2016</span>
+                </div>
+                <div class="col-md-4">
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        <li><a href="#"><i class="fa fa-github"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
                         </li>
                     </ul>
                 </div>
